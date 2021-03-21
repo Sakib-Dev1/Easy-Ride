@@ -25,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-
-  transparent: {
-    background: 'transparent',
-  },
 }))
 
 const Header = (props) => {
@@ -40,7 +36,7 @@ const Header = (props) => {
   } = useContext(store)
 
   return (
-    <AppBar className={classes.transparent} elevation={0}>
+    <AppBar elevation={0}>
       <Toolbar>
         <IconButton
           style={{
@@ -60,6 +56,11 @@ const Header = (props) => {
             onClick={() => history.push('/')}
             style={{ color: 'white' }}
             variant='text'
+            style={{
+              color: 'white',
+              fontSize: '40px',
+              fontWeight: 'bold',
+            }}
           >
             Easy Ride
           </Button>

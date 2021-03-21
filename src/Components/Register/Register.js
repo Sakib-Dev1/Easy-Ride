@@ -18,9 +18,9 @@ import { setUserAction } from '../Action/action'
 const Register = () => {
   const paperStyle = {
     padding: 20,
-
+    height: '56vh',
     width: 280,
-    margin: '20px auto',
+    margin: '25px auto',
   }
   const avatarStyle = { backgroundColor: '#1bbd7e' }
   const btnstyle = { margin: '8px 0' }
@@ -146,10 +146,17 @@ const Register = () => {
             </Button>
           </form>
 
-          <Typography>
+          <Typography style={{ marginTop: '20px' }}>
             {' '}
-            Do you have an account ?
-            <Button onClick={() => history.push('/login')}>Sign In</Button>
+            Do you have an account?
+            <Button
+              style={{ marginLeft: '5px' }}
+              color='secondary'
+              variant='contained'
+              onClick={() => history.push('/login')}
+            >
+              Sign In
+            </Button>
           </Typography>
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </Paper>

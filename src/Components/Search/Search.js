@@ -49,6 +49,10 @@ const Search = () => {
             <>
               {' '}
               <form
+                style={{
+                  boxShadow:
+                    'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
+                }}
                 onSubmit={() => {
                   setClick(true)
                   const results = allResults.filter(
@@ -91,6 +95,8 @@ const Search = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'flex-start',
+                    boxShadow:
+                      'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
                   }}
                 >
                   <TimelineItem>
@@ -108,7 +114,13 @@ const Search = () => {
                   </TimelineItem>
                 </div>
               </Timeline>
-              <Grid container>
+              <Grid
+                style={{
+                  boxShadow:
+                    'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',
+                }}
+                container
+              >
                 {results.map((res) => (
                   <Grid item xs={12}>
                     <Card>

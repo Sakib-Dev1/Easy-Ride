@@ -4,8 +4,8 @@ import GoogleMapReact from 'google-map-react'
 const GoogleMap = () => {
   const mapValue = {
     center: {
-      lat: 59.95,
-      lng: 30.33,
+      lat: 23.8599756,
+      lng: 90.9410332,
     },
     zoom: 11,
   }

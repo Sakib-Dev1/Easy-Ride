@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import { Typography } from '@material-ui/core'
 import { useHistory } from 'react-router'
-import image from '../../images/bg.jpeg'
+import image from '../../images/bg3.jpeg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
