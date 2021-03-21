@@ -1,0 +1,5 @@
+export const GET_CATEGORIES = 'GET_CATEGORIES'
+export const GET_RESULTS = 'GET_RESULTS'
+export const SET_USER = 'SET_USER'
+export const SET_VEHICLE = 'SET_VEHICLE'
+export const SET_RESULTS = 'SET_RESULTS'
